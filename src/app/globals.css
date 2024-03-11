@@ -1,0 +1,8 @@
+body {
+  background-color: #333333;
+  color: white;
+}
+svg{
+  min-width: 14px;
+  min-height: 14px;
+}
