@@ -8,14 +8,12 @@ const TaskList = () => {
   const tasks = useSelector((state: RootState) => state.tasks);
 
   const handleRemoveClick = (taskId: number) => {
-    console.log("click");
-    console.log(tasks);
     dispatch({ type: "tasks/removeTask", payload: taskId });
   };
   const handleTaskStatusChange = (taskId: number) => {
     const task = tasks.find(task => task.id === taskId);
     if (!task) return;
-
+    console.log(tasks);
     dispatch({
       type: "tasks/updateTaskStatus",
       payload: {

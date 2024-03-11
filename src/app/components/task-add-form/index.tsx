@@ -9,7 +9,10 @@ const TaskAddForm = () => {
   const [taskDescription, setTaskDescription] = useState("");
   const [taskCompletion, setTaskCompletion] = useState(false);
 
-  const handleAddClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (!taskName) {
       return;
     }
@@ -26,11 +29,6 @@ const TaskAddForm = () => {
     setTaskName("");
     setTaskDescription("");
     setTaskCompletion(false);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    handleAddClick(e as any);
   };
 
   return (
