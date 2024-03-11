@@ -12,6 +12,18 @@ const TaskList = () => {
     console.log(tasks);
     dispatch({ type: "tasks/removeTask", payload: taskId });
   };
+  const handleTaskStatusChange = (taskId: number) => {
+    const task = tasks.find(task => task.id === taskId);
+    if (!task) return;
+
+    dispatch({
+      type: "tasks/updateTaskStatus",
+      payload: {
+        id: taskId,
+        completed: !task.completed,
+      },
+    });
+  };
 
   return (
     <div className="container">
@@ -24,7 +36,7 @@ const TaskList = () => {
           >
             <div>
               <div className='d-flex align-items-center'>
-                <input type="checkbox" checked={task.completed} readOnly/>
+                <input type="checkbox" checked={task.completed} onChange={() => handleTaskStatusChange(task.id)}/>
                 <span className="ms-2">{task.title}</span>
               </div>
               <p>{task.description}</p>
