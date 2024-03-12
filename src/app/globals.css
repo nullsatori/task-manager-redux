@@ -1,8 +1,24 @@
 body {
-  background-color: #333333;
+  background-color: #111111;
   color: white;
 }
-svg{
+svg {
   min-width: 14px;
   min-height: 14px;
+}
+.edit-modal {
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+.bg-success.active {
+  border: 2px solid rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
+}
+.bg-danger.active {
+  border: 2px solid rgba(var(--bs-danger-rgb), var(--bs-bg-opacity));
+}
+.bg-primary.active {
+  border: 2px solid rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
 }

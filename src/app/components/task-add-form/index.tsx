@@ -9,14 +9,11 @@ const TaskAddForm = () => {
   const [taskDescription, setTaskDescription] = useState("");
   const [taskCompletion, setTaskCompletion] = useState(false);
 
-
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!taskName) {
       return;
     }
-    console.log(taskCompletion)
     dispatch({
       type: "tasks/addTask",
       payload: {
@@ -32,10 +29,10 @@ const TaskAddForm = () => {
   };
 
   return (
-    <div className="d-flex justify-content-between  container mt-2">
-      <form className='d-flex align-items-center' onSubmit={handleSubmit}>
+    <div className="d-flex justify-content-between  container mt-2 ">
+      <form className="d-flex align-items-center" onSubmit={handleSubmit}>
         <input
-          className='rounded-2 py-1 px-2 mx-0'
+          className="rounded-2 py-1 px-2 mx-0 bg-dark text-white border-0"
           type="text"
           placeholder="Название задачи"
           value={taskName}
@@ -43,7 +40,7 @@ const TaskAddForm = () => {
           required={true}
         />
         <input
-          className='rounded-2 py-1 px-2 mx-2'
+          className="rounded-2 py-1 px-2 mx-2 bg-dark text-white border-0"
           type="text"
           placeholder="Описание задачи"
           value={taskDescription}
@@ -51,15 +48,19 @@ const TaskAddForm = () => {
           required={true}
         />
 
-        <div className="btn-group-toggle " data-toggle="buttons">
+        <div className="btn-group-toggle" data-toggle="buttons">
           <label className="btn btn-secondary active d-flex align-items-center">
-            <input className='me-2' type="checkbox" autoComplete="off" checked={taskCompletion} onChange={(e) => setTaskCompletion(e.target.checked)} /> Выполнено
+            <input
+              className="me-2"
+              type="checkbox"
+              autoComplete="off"
+              checked={taskCompletion}
+              onChange={(e) => setTaskCompletion(e.target.checked)}
+            />
+            Выполнено
           </label>
         </div>
-        <button
-          className="btn btn-outline-danger ms-3"
-          type="submit"
-        >
+        <button className="btn btn-outline-danger ms-3" type="submit">
           Добавить задачу
         </button>
       </form>

@@ -10,7 +10,7 @@ export default function Home() {
     <Provider store={store}>
       <main className={styles.main}>
         <div className="header mb-4 font-monospace">
-          <h1 className=''>Task Manager</h1>
+          <h1 className="">Планировщик задач</h1>
         </div>
         <div className="container font-monospace">
           <TaskAddForm />

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20838b24-cae5-4c3d-9a17-7e237c6eb751" name="Changes" comment="implemented:&#10;redux reducer for updating task status">
+    <list default="true" id="20838b24-cae5-4c3d-9a17-7e237c6eb751" name="Changes" comment="unversioned files">
+      <change afterPath="$PROJECT_DIR$/src/app/components/edit-modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/task-add-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/task-add-form/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/task-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/task-list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/tasksSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/tasksSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +54,37 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
     "ts.external.directory.path": "E:\\repos\\task-manager-redux\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.build" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710162729345</updated>
       <workItem from="1710162730374" duration="264000" />
-      <workItem from="1710162995449" duration="9951000" />
+      <workItem from="1710162995449" duration="10799000" />
+      <workItem from="1710245152091" duration="8344000" />
     </task>
     <task id="LOCAL-00001" summary="implemented:&#10;redux store for names, descriptions and status of tasks&#10;adding/removing tasks">
       <option name="closed" value="true" />
@@ -80,7 +113,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710173304746</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaning">
+      <option name="closed" value="true" />
+      <created>1710173557772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710173557772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="unversioned files">
+      <option name="closed" value="true" />
+      <created>1710173726596</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710173726596</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +149,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented:&#10;redux store for names, descriptions and status of tasks&#10;adding/removing tasks" />
     <MESSAGE value="implemented:&#10;redux reducer for updating task status" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented:&#10;redux reducer for updating task status" />
+    <MESSAGE value="cleaning" />
+    <MESSAGE value="unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="unversioned files" />
   </component>
 </project>

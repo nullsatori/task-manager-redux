@@ -40,14 +40,34 @@ const tasksSlice = createSlice({
         state.splice(index, 1);
       }
     },
-    updateTaskStatus(state, action: PayloadAction<{ id: number; completed: boolean }>) {
+    editTask(
+      state,
+      action: PayloadAction<{
+        id: number;
+        title: string;
+        description: string;
+        completed: boolean;
+      }>,
+    ) {
+      const index = state.findIndex((task) => task.id === action.payload.id);
+      if (index !== -1) {
+        state[index].title = action.payload.title;
+        state[index].description = action.payload.description;
+        state[index].completed = action.payload.completed;
+      }
+    },
+    updateTaskStatus(
+      state,
+      action: PayloadAction<{ id: number; completed: boolean }>,
+    ) {
       const index = state.findIndex((task) => task.id === action.payload.id);
       if (index !== -1) {
         state[index].completed = action.payload.completed;
       }
-    }
+    },
   },
 });
 
-export const { addTask, removeTask, updateTaskStatus } = tasksSlice.actions;
+export const { addTask, removeTask, updateTaskStatus, editTask } =
+  tasksSlice.actions;
 export default tasksSlice.reducer;
