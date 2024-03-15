@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
 interface EditModalProps {
   id: number;
@@ -9,8 +8,8 @@ interface EditModalProps {
 }
 
 const EditModal: React.FC<EditModalProps> = ({ id, visible, handleClose }) => {
-  const dispatch = useDispatch();
-  const tasks = useSelector((state: RootState) => state.tasks);
+  const dispatch = useAppDispatch();
+  const tasks = useAppSelector((state) => state.tasks);
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [taskCompletion, setTaskCompletion] = useState(false);
@@ -38,11 +37,11 @@ const EditModal: React.FC<EditModalProps> = ({ id, visible, handleClose }) => {
         completed: taskCompletion,
       },
     });
-    handleClose(); // Close the modal after editing
+    handleClose();
   };
 
   if (!visible) {
-    return null; // Don't render the modal if it's not visible
+    return null;
   }
 
   return (

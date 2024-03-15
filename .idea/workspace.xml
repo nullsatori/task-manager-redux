@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20838b24-cae5-4c3d-9a17-7e237c6eb751" name="Changes" comment="unversioned files">
-      <change afterPath="$PROJECT_DIR$/src/app/components/edit-modal/index.tsx" afterDir="false" />
+    <list default="true" id="20838b24-cae5-4c3d-9a17-7e237c6eb751" name="Changes" comment="implemented:&#10;modal to edit tasks&#10;ability to filter tasks&#10;better status display">
+      <change afterPath="$PROJECT_DIR$/src/redux/hooks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/edit-modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/edit-modal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/task-add-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/task-add-form/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/task-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/task-list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/tasksSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/tasksSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -95,7 +93,9 @@
       <updated>1710162729345</updated>
       <workItem from="1710162730374" duration="264000" />
       <workItem from="1710162995449" duration="10799000" />
-      <workItem from="1710245152091" duration="8344000" />
+      <workItem from="1710245152091" duration="10017000" />
+      <workItem from="1710259740216" duration="1689000" />
+      <workItem from="1710526508606" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="implemented:&#10;redux store for names, descriptions and status of tasks&#10;adding/removing tasks">
       <option name="closed" value="true" />
@@ -129,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710173726596</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented:&#10;modal to edit tasks&#10;ability to filter tasks&#10;better status display">
+      <option name="closed" value="true" />
+      <created>1710254780786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710254780786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +159,7 @@
     <MESSAGE value="implemented:&#10;redux reducer for updating task status" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="unversioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="unversioned files" />
+    <MESSAGE value="implemented:&#10;modal to edit tasks&#10;ability to filter tasks&#10;better status display" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented:&#10;modal to edit tasks&#10;ability to filter tasks&#10;better status display" />
   </component>
 </project>

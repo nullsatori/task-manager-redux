@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import EditModal from "@/app/components/edit-modal";
 
 const TaskList = () => {
-  const dispatch = useDispatch();
-  const tasks = useSelector((state: RootState) => state.tasks);
+  const dispatch = useAppDispatch();
+  const tasks = useAppSelector((state) => state.tasks);
   const [visible, setVisible] = useState(false);
   const [taskId, setTaskId] = useState(0);
   const [statusFilter, setStatusFilter] = useState("Все");

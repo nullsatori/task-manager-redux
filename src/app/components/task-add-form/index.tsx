@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/redux/store";
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 
 const TaskAddForm = () => {
-  const dispatch = useDispatch();
-  const tasks = useSelector((state: RootState) => state.tasks);
+  const dispatch = useAppDispatch();
+  const tasks = useAppSelector((state) => state.tasks);
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [taskCompletion, setTaskCompletion] = useState(false);
